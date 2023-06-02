@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_cookbook/Animation/animiate_page_route_transition.dart';
 import 'package:flutter_cookbook/design/tabs_example.dart';
 import 'package:flutter_cookbook/effects/download_button.dart';
+import 'package:flutter_cookbook/stateManagement/chapter_1/contact_book.dart';
+import 'package:flutter_cookbook/stateManagement/chapter_1/simple_todo_list.dart';
 import 'package:flutter_cookbook/widgets/common.dart';
 
 class AppPage extends StatelessWidget {
@@ -32,7 +34,15 @@ class AppPage extends StatelessWidget {
               newPage: TabExample(),
             ),
             TitleFontText(title: 'Effect'),
-            SubScription(title: 'Download Button', newPage: DownloadExample())
+            SubScription(title: 'Download Button', newPage: DownloadExample()),
+            TitleFontText(title: 'SateMangement... chapter 1'),
+            SubScription(
+                title: 'Move to see contactBook stateManagement',
+                newPage: ChappterOneStateManagement()),
+            TitleFontText(title: 'SateMangement... chapter 1'),
+            SubScription(
+                title: 'Move to see todoList stateManagement',
+                newPage: ChapterTwoTodoList()),
           ],
         ),
       ),

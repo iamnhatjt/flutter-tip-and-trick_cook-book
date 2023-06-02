@@ -15,6 +15,7 @@ dependencies:
   google_fonts: ^4.0.4
   collection: ^1.17.0
   reflectable: ^4.0.5
+  uuid: ^3.0.7
 
 dev_dependencies:
   flutter_test:
@@ -23,17 +24,10 @@ dev_dependencies:
   flutter_lints: ^2.0.0
 
 flutter:
-  fonts:
-    - family: Raleway
-      fonts:
-        - asset: fonts/Roboto-Black.ttf
-        - asset: fonts/Roboto-Blod.ttf
-          style: italic
-
   uses-material-design: true
 
   assets:
-    - assets/
+    - assets/fonts/
 
   # To add assets to your application, add an assets section, like this:
   # assets:
