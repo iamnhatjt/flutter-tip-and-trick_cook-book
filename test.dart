@@ -1,29 +1,36 @@
-class Person {
-  final int age;
-
-  Person({
-    required this.age,
-  }) {
-    if (age < 0) {
-      throw Exception('Age must be positive');
-    }
-    if (age > 100) {
-      throw 'some thing > 100';
+Stream<int> numbers({
+  int start = 0,
+  int end = 4,
+  IsIncluded? f,
+}) async* {
+  for (var i = start; i < end; i++) {
+    if (f == null || f(i)) {
+      yield i;
     }
   }
 }
 
-void tryCreatingPerson({int age = 0}) {
-  try {
-    print(Person(age: age).age);
-  } catch (e) {
-    print(e.runtimeType);
-    print(e);
-  }
-}
+typedef IsIncluded = bool Function(int value);
 
-void main(List<String> args) {
-  tryCreatingPerson(age: 20);
-  tryCreatingPerson(age: -1);
-  tryCreatingPerson(age: 141);
+bool evenNumberOnly(int value) => value % 2 == 0;
+bool oldNumberOnly(int value) => value % 2 == 1;
+
+void main(List<String> args) async {
+  await for (final value in numbers()) {
+    print(value);
+  }
+  print("---------------------");
+  await for (final value in numbers(
+    end: 10,
+    f: evenNumberOnly,
+  )) {
+    print(value);
+  }
+  print("---------------------");
+  await for (final value in numbers(
+    end: 10,
+    f: oldNumberOnly,
+  )) {
+    print(value);
+  }
 }
