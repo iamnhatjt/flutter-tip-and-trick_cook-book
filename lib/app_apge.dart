@@ -4,7 +4,7 @@ import 'package:flutter_cookbook/design/tabs_example.dart';
 import 'package:flutter_cookbook/effects/download_button.dart';
 import 'package:flutter_cookbook/flutter_tip_and_trick_ui/text_stroke_flutter/text_stroke.dart';
 import 'package:flutter_cookbook/stateManagement/chapter_1/contact_book.dart';
-import 'package:flutter_cookbook/stateManagement/chapter_1/simple_todo_list.dart';
+import 'package:flutter_cookbook/stateManagement/inheritwidget_example.dart/myInherit_widget.dart';
 import 'package:flutter_cookbook/widgets/common.dart';
 
 class AppPage extends StatelessWidget {
@@ -40,10 +40,11 @@ class AppPage extends StatelessWidget {
             SubScription(
                 title: 'Move to see contactBook stateManagement',
                 newPage: ChappterOneStateManagement()),
-            TitleFontText(title: 'SateMangement... chapter 1'),
+            TitleFontText(title: 'SateMangement... chapter 2'),
             SubScription(
-                title: 'Move to see todoList stateManagement',
-                newPage: ChapterTwoTodoList()),
+              title: 'InheritWidget',
+              newPage: InheritedUi(),
+            ),
             TitleFontText(title: 'Flutter tip and Trick Ui'),
             SubScription(
               title: 'Move to see Strocke text',
