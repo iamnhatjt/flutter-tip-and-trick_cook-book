@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_cookbook/Animation/animiate_page_route_transition.dart';
 import 'package:flutter_cookbook/design/tabs_example.dart';
 import 'package:flutter_cookbook/effects/download_button.dart';
+import 'package:flutter_cookbook/flutter_tip_and_trick_ui/presenting_future/preseting_future.dart';
 import 'package:flutter_cookbook/flutter_tip_and_trick_ui/presenting_stream_in_futter/presenting_stream.dart';
 import 'package:flutter_cookbook/flutter_tip_and_trick_ui/text_stroke_flutter/text_stroke.dart';
 import 'package:flutter_cookbook/stateManagement/chapter_1/contact_book.dart';
@@ -58,6 +59,10 @@ class AppPage extends StatelessWidget {
             SubScription(
               title: 'Move to see streamBuilder example',
               newPage: PresentingUiVersion2(),
+            ),
+            SubScription(
+              title: 'Future presenting',
+              newPage: PresentingFuture(),
             ),
           ],
         ),
