@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_cookbook/Animation/animiate_page_route_transition.dart';
 import 'package:flutter_cookbook/design/tabs_example.dart';
 import 'package:flutter_cookbook/effects/download_button.dart';
+import 'package:flutter_cookbook/flutter_tip_and_trick_ui/presenting_stream_in_futter/presenting_stream.dart';
 import 'package:flutter_cookbook/flutter_tip_and_trick_ui/text_stroke_flutter/text_stroke.dart';
 import 'package:flutter_cookbook/stateManagement/chapter_1/contact_book.dart';
 import 'package:flutter_cookbook/stateManagement/inheritwidget_example.dart/myInherit_widget.dart';
@@ -49,6 +50,14 @@ class AppPage extends StatelessWidget {
             SubScription(
               title: 'Move to see Strocke text',
               newPage: TextStroke(),
+            ),
+            SubScription(
+              title: 'Move to see presenting stream',
+              newPage: PresentingUi(),
+            ),
+            SubScription(
+              title: 'Move to see streamBuilder example',
+              newPage: PresentingUiVersion2(),
             ),
           ],
         ),
