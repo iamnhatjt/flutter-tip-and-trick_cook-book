@@ -45,7 +45,7 @@ class AppPage extends StatelessWidget {
             TitleFontText(title: 'SateMangement... chapter 2'),
             SubScription(
               title: 'InheritWidget',
-              newPage: InheritedUi(),
+              newPage: showInheritedWidget(),
             ),
             TitleFontText(title: 'Flutter tip and Trick Ui'),
             SubScription(

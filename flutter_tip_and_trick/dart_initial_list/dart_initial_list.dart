@@ -6,3 +6,5 @@ class Animal {
   Animal(this.type);
   Animal.dog() : type = AnimalType.dog;
 }
+
+

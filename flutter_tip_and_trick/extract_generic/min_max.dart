@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 extension MinMax<T extends num> on List<T> {
   T get max => _sorted.first;
 
