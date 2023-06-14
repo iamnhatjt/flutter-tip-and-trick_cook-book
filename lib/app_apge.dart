@@ -6,7 +6,8 @@ import 'package:flutter_cookbook/flutter_tip_and_trick_ui/presenting_future/pres
 import 'package:flutter_cookbook/flutter_tip_and_trick_ui/presenting_stream_in_futter/presenting_stream.dart';
 import 'package:flutter_cookbook/flutter_tip_and_trick_ui/text_stroke_flutter/text_stroke.dart';
 import 'package:flutter_cookbook/stateManagement/chapter_1/contact_book.dart';
-import 'package:flutter_cookbook/stateManagement/inheritwidget_example.dart/myInherit_widget.dart';
+import 'package:flutter_cookbook/stateManagement/inherited_model/inherit_model_example.dart';
+import 'package:flutter_cookbook/stateManagement/inheritwidget_example/myInherit_widget.dart';
 import 'package:flutter_cookbook/widgets/common.dart';
 
 class AppPage extends StatelessWidget {
@@ -46,6 +47,10 @@ class AppPage extends StatelessWidget {
             SubScription(
               title: 'InheritWidget',
               newPage: showInheritedWidget(),
+            ),
+            SubScription(
+              title: 'InheritedModel',
+              newPage: InhertedModelExample(),
             ),
             TitleFontText(title: 'Flutter tip and Trick Ui'),
             SubScription(
