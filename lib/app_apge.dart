@@ -11,6 +11,8 @@ import 'package:flutter_cookbook/stateManagement/inherited_model/inherit_model_e
 import 'package:flutter_cookbook/stateManagement/inheritwidget_example/myInherit_widget.dart';
 import 'package:flutter_cookbook/widgets/common.dart';
 
+import 'Animation/basic_animation.dart';
+
 class AppPage extends StatelessWidget {
   const AppPage({super.key});
 
@@ -32,6 +34,10 @@ class AppPage extends StatelessWidget {
             SubScription(
               title: 'Add a drawer to a screen',
               newPage: AnimatePageRote(),
+            ),
+            SubScription(
+              title: 'Add a drawer to a screen',
+              newPage: BasicAnimationExample(),
             ),
             TitleFontText(title: 'Design'),
             SubScription(
