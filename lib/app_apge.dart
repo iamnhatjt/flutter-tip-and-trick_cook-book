@@ -6,6 +6,7 @@ import 'package:flutter_cookbook/flutter_tip_and_trick_ui/presenting_future/pres
 import 'package:flutter_cookbook/flutter_tip_and_trick_ui/presenting_stream_in_futter/presenting_stream.dart';
 import 'package:flutter_cookbook/flutter_tip_and_trick_ui/text_stroke_flutter/text_stroke.dart';
 import 'package:flutter_cookbook/stateManagement/chapter_1/contact_book.dart';
+import 'package:flutter_cookbook/stateManagement/inheriteNotifer_changeNotifier/inheritedNotifer_and_changeNotifer.dart';
 import 'package:flutter_cookbook/stateManagement/inherited_model/inherit_model_example.dart';
 import 'package:flutter_cookbook/stateManagement/inheritwidget_example/myInherit_widget.dart';
 import 'package:flutter_cookbook/widgets/common.dart';
@@ -51,6 +52,10 @@ class AppPage extends StatelessWidget {
             SubScription(
               title: 'InheritedModel',
               newPage: InhertedModelExample(),
+            ),
+            SubScription(
+              title: 'inheritedNotifier and changeNotifier',
+              newPage: InheritedNotidierAndChangerNotifier(),
             ),
             TitleFontText(title: 'Flutter tip and Trick Ui'),
             SubScription(
