@@ -1,9 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_cookbook/stateManagement/provider/provider_example.dart';
+import 'package:provider/provider.dart';
 
 import 'app_apge.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(ChangeNotifierProvider(
+    create: (context) => Counter(),
+    child: (const MyApp()),
+  ));
 }
 
 class MyApp extends StatelessWidget {

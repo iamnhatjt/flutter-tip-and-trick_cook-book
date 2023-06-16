@@ -9,9 +9,11 @@ import 'package:flutter_cookbook/stateManagement/chapter_1/contact_book.dart';
 import 'package:flutter_cookbook/stateManagement/inheriteNotifer_changeNotifier/inheritedNotifer_and_changeNotifer.dart';
 import 'package:flutter_cookbook/stateManagement/inherited_model/inherit_model_example.dart';
 import 'package:flutter_cookbook/stateManagement/inheritwidget_example/myInherit_widget.dart';
+import 'package:flutter_cookbook/stateManagement/provider/provider_example.dart';
 import 'package:flutter_cookbook/widgets/common.dart';
 
 import 'Animation/basic_animation.dart';
+import 'Animation/chained_animaiton.dart';
 
 class AppPage extends StatelessWidget {
   const AppPage({super.key});
@@ -36,8 +38,12 @@ class AppPage extends StatelessWidget {
               newPage: AnimatePageRote(),
             ),
             SubScription(
-              title: 'Add a drawer to a screen',
+              title: 'Basic Animation',
               newPage: BasicAnimationExample(),
+            ),
+            SubScription(
+              title: 'Chained Animation',
+              newPage: ChainAnimationExample(),
             ),
             TitleFontText(title: 'Design'),
             SubScription(
@@ -47,6 +53,8 @@ class AppPage extends StatelessWidget {
             TitleFontText(title: 'Effect'),
             SubScription(title: 'Download Button', newPage: DownloadExample()),
             TitleFontText(title: 'SateMangement... chapter 1'),
+
+            // state management ...
             SubScription(
                 title: 'Move to see contactBook stateManagement',
                 newPage: ChappterOneStateManagement()),
@@ -63,6 +71,12 @@ class AppPage extends StatelessWidget {
               title: 'inheritedNotifier and changeNotifier',
               newPage: InheritedNotidierAndChangerNotifier(),
             ),
+            SubScription(
+              title: 'provider example package',
+              newPage: CounterWidget(),
+            ),
+
+            // flutter tip and trick ui
             TitleFontText(title: 'Flutter tip and Trick Ui'),
             SubScription(
               title: 'Move to see Strocke text',
