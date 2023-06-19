@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_cookbook/stateManagement/provider/provider_example.dart';
 import 'package:provider/provider.dart';
 
-import 'app_apge.dart';
+import 'core/router_page.dart';
 
 void main() {
   runApp(ChangeNotifierProvider(
@@ -35,11 +35,13 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      routes: appRouterConFig,
+      initialRoute: '/',
       themeMode: themeMode,
       darkTheme: ThemeData.dark(),
       theme: ThemeData(fontFamily: 'Robonto', primaryColor: Colors.amber),
       title: 'Flutter Demo',
-      home: const AppPage(),
+      // home: const AppPage(),
     );
   }
 }
