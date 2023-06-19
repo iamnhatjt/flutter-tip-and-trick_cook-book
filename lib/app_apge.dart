@@ -14,6 +14,7 @@ import 'package:flutter_cookbook/widgets/common.dart';
 
 import 'Animation/basic_animation.dart';
 import 'Animation/chained_animaiton.dart';
+import 'main.dart';
 
 class AppPage extends StatelessWidget {
   const AppPage({super.key});
@@ -27,8 +28,14 @@ class AppPage extends StatelessWidget {
           style: TextStyle(
               color: Colors.black, fontSize: 40, fontWeight: FontWeight.w600),
         ),
+        actions: [
+          IconButton(
+              onPressed: () {
+                MyApp.of(context)!.changeTheme();
+              },
+              icon: Icon(Icons.light_mode))
+        ],
       ),
-      backgroundColor: Colors.grey,
       body: SingleChildScrollView(
         child: Column(
           children: const [

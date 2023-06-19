@@ -11,11 +11,32 @@ void main() {
   ));
 }
 
-class MyApp extends StatelessWidget {
+class MyApp extends StatefulWidget {
   const MyApp({super.key});
+
+  @override
+  State<MyApp> createState() => _MyAppState();
+  static _MyAppState? of(BuildContext context) =>
+      context.findAncestorStateOfType();
+}
+
+class _MyAppState extends State<MyApp> {
+  ThemeMode themeMode = ThemeMode.dark;
+  void changeTheme() {
+    setState(() {
+      if (themeMode == ThemeMode.dark) {
+        themeMode = ThemeMode.light;
+      } else {
+        themeMode = ThemeMode.dark;
+      }
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      themeMode: themeMode,
+      darkTheme: ThemeData.dark(),
       theme: ThemeData(fontFamily: 'Robonto', primaryColor: Colors.amber),
       title: 'Flutter Demo',
       home: const AppPage(),
