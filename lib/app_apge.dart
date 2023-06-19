@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_cookbook/Animation/animiate_page_route_transition.dart';
 import 'package:flutter_cookbook/design/tabs_example.dart';
 import 'package:flutter_cookbook/effects/download_button.dart';
+import 'package:flutter_cookbook/flutter_apprentice/bottom_navigartorbar.dart';
 import 'package:flutter_cookbook/flutter_tip_and_trick_ui/presenting_future/preseting_future.dart';
 import 'package:flutter_cookbook/flutter_tip_and_trick_ui/presenting_stream_in_futter/presenting_stream.dart';
 import 'package:flutter_cookbook/flutter_tip_and_trick_ui/text_stroke_flutter/text_stroke.dart';
@@ -14,6 +15,7 @@ import 'package:flutter_cookbook/widgets/common.dart';
 
 import 'Animation/basic_animation.dart';
 import 'Animation/chained_animaiton.dart';
+import 'flutter_navigation/simple_hero_naivigator.dart';
 import 'main.dart';
 
 class AppPage extends StatelessWidget {
@@ -33,7 +35,9 @@ class AppPage extends StatelessWidget {
               onPressed: () {
                 MyApp.of(context)!.changeTheme();
               },
-              icon: Icon(Icons.light_mode))
+              icon: Icon(
+                Icons.light_mode,
+              ))
         ],
       ),
       body: SingleChildScrollView(
@@ -101,6 +105,16 @@ class AppPage extends StatelessWidget {
               title: 'Future presenting',
               newPage: PresentingFuture(),
             ),
+            TitleFontText(title: 'Flutter Apprentice Book'),
+            SubScription(
+              title: 'Bottom navigation bar',
+              newPage: BottomNavigatorExample(),
+            ),
+            TitleFontText(title: 'Flutter Navigator'),
+            SubScription(
+              title: 'Hero Navigator',
+              newPage: SimpleHeroExample(),
+            )
           ],
         ),
       ),
