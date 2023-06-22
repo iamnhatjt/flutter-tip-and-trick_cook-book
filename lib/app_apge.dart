@@ -18,6 +18,7 @@ import 'Animation/basic_animation.dart';
 import 'Animation/chained_animaiton.dart';
 import 'flutter_navigation/argument_navigator.dart';
 import 'flutter_navigation/simple_hero_naivigator.dart';
+import 'flutter_tip_and_trick_ui/stream_controller_and_stream_builder/stream_controller_and_stream_builder.dart';
 import 'main.dart';
 
 class AppPage extends StatelessWidget {
@@ -107,6 +108,12 @@ class AppPage extends StatelessWidget {
               title: 'Future presenting',
               newPage: PresentingFuture(),
             ),
+            SubScription(
+              title: 'StreamController and StreamBuild',
+              newPage: StreamControllerAndStreamBuilder(),
+            ),
+
+            // book club
             TitleFontText(title: 'Flutter Apprentice Book'),
             SubScription(
               title: 'Bottom navigation bar',
