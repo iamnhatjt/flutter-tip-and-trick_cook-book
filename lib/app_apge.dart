@@ -18,6 +18,7 @@ import 'Animation/basic_animation.dart';
 import 'Animation/chained_animaiton.dart';
 import 'flutter_navigation/argument_navigator.dart';
 import 'flutter_navigation/simple_hero_naivigator.dart';
+import 'flutter_networking/fetch_data_from_internet/fetch_data_from_internet.dart';
 import 'flutter_tip_and_trick_ui/stream_controller_and_stream_builder/stream_controller_and_stream_builder.dart';
 import 'main.dart';
 
@@ -132,6 +133,13 @@ class AppPage extends StatelessWidget {
               title: 'Argument Navigation Example',
               newPage: ArgumenNavitionExample(),
             ),
+            TitleFontText(title: 'NetWorking'),
+            SubScription(
+                title: 'Fetch data from internet',
+                newPage: FetchDataFromInternetWidget()),
+            SizedBox(
+              height: 45,
+            )
           ],
         ),
       ),
