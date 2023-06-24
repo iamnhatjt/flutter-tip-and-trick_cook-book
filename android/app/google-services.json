@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "853360646904",
+    "project_id": "flutterfirebasetutorial-86c37",
+    "storage_bucket": "flutterfirebasetutorial-86c37.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:853360646904:android:69a709bcec84f14e53f90d",
+        "android_client_info": {
+          "package_name": "com.example.flutter_cookbook"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "853360646904-sfad9menbrt1slugjln0e4trj5tbahqg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAar1QC8dt219j4aVf6L78YBHjmO9eIVAM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "853360646904-sfad9menbrt1slugjln0e4trj5tbahqg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

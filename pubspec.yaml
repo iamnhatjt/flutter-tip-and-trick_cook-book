@@ -18,12 +18,18 @@ dependencies:
   uuid: ^3.0.7
   lottie: ^2.3.2
   provider: ^6.0.5
+  json_annotation: ^4.8.1
+  firebase_auth: ^4.6.3
+  cloud_firestore: ^4.8.1
+  firebase_core: ^2.14.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
   flutter_lints: ^2.0.0
+  json_serializable: ^6.7.0
+  build_runner: ^2.4.5
 
 flutter:
   uses-material-design: true
